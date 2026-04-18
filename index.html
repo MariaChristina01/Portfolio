@@ -7,22 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dYf3Z8zFz5pXoFZzYwFZt+YwFZt+YwFZt+YwFZt+YwFZt+YwFZt+YwFZt+YwFZt+YwFZt+YwFZt+Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Portfolio Website</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("HHhafwc-GHAHY6AUL"); // your Public Key
+  })();
+</script>
+
+
 </head>
 <body>
     <header>
         <a href="#" class="logo">Maria Christina</a>
 
 
+        <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+        </div>
+
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
         </nav>
+
     </header>
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-img">
             <img src="home.jpg" alt="Profile">
         </div>
@@ -39,5 +53,212 @@
         <a href="#" class="btn">Download CV</a>
         </div>
     </section>
+
+    <section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-grid">
+      <div class="service-box">
+         <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>I build responsive, user-friendly websites using modern frameworks like React, TypeScript, and PHP.</p>
+      </div>
+  </div>
+   <div class="container">
+    <div class="services-grid">
+      <div class="service-box">
+        <i class="fas fa-database"></i>
+        <h3>Database & API Integration</h3>
+        <p>Scalable database schemas and secure API connections for real-world systems.</p>
+      </div>
+  </div>
+   <div class="container">
+    <div class="services-grid">
+       <div class="service-box">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>Intuitive dashboards, custom layouts, and engaging interfaces with Figma prototyping.</p>
+      </div>
+  </div> <div class="container">
+    <div class="services-grid">
+      <div class="service-box">
+         <div class="service-box">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analytics</h3>
+        <p>Professor-friendly, interpretable notebooks for exploratory data analysis and predictive modeling.</p>
+      </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <i class="fas fa-code"></i>
+        <h3>Frontend Development</h3>
+        <p>React, TypeScript, HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-server"></i>
+        <h3>Backend Development</h3>
+        <p>PHP, Node.js, Supabase, REST APIs</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-database"></i>
+        <h3>Database Management</h3>
+        <p>PostgreSQL, MySQL, Schema Design</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>Figma, Wireframing, Responsive Layouts</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analytics</h3>
+        <p>EDA, Machine Learning, Orange Data Mining</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-lock"></i>
+        <h3>Security & Deployment</h3>
+        <p>InfinityFree Hosting, Environment Variables</p>
+      </div>
+
+       <div class="skill-box">
+        <i class="fas fa-print"></i>
+        <h3>Hardware Integration</h3>
+        <p>Middleware development for thermal printers and real-world system automation.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-project-diagram"></i>
+        <h3>Project Management</h3>
+        <p>Agile workflow, task prioritization, and collaborative development practices.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Services</h3>
+        <p>Supabase, Firebase, and scalable cloud-based application deployment.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Academic Writing</h3>
+        <p>Professor-friendly documentation, interpretable EDA notebooks, and technical reports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-timeline">
+
+      <div class="edu-box">
+        <span class="year">2017</span>
+        <h3>Elementary Graduate</h3>
+        <p>Central II Santa Rosa Elementary School</p>
+      </div>
+
+      <div class="edu-box">
+        <span class="year">2020</span>
+        <h3>High School Graduate</h3>
+        <p>Aplaya National High School ANNEX 1</p>
+      </div>
+
+      <div class="edu-box">
+        <span class="year">2023</span>
+        <h3>Senior High School Graduate</h3>
+        <p>Saint Ignatius Academy (Cabuyao)</p>
+      </div>
+
+      <div class="edu-box">
+        <span class="year">Present</span>
+        <h3>College – BSIT, 3rd Year</h3>
+        <p>Asia Technological School of Science and Arts</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-timeline">
+
+      <div class="exp-box">
+        <span class="year">2023 – Present</span>
+        <h3>Freelance Web Developer</h3>
+        <p>Developed responsive websites and dashboards using React, TypeScript, and PHP. Integrated Supabase and Stripe APIs for real-world applications.</p>
+      </div>
+
+      <div class="exp-box">
+        <span class="year">2022 – 2023</span>
+        <h3>Academic Projects</h3>
+        <p>Created professor-friendly EDA notebooks, machine learning workflows, and alumni feedback systems. Focused on interpretable results and clean documentation.</p>
+      </div>
+
+      <div class="exp-box">
+        <span class="year">2021 – 2022</span>
+        <h3>UI/UX Designer (Student Projects)</h3>
+        <p>Designed Figma prototypes, wireframes, and responsive layouts for portfolio and school systems. Emphasized usability and polished design.</p>
+      </div>
+
+      <div class="exp-box">
+        <span class="year">2020 – 2021</span>
+        <h3>System Integration Practice</h3>
+        <p>Worked on middleware development for thermal printer integration with POS systems, ensuring smooth hardware-software communication.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="contact-text">Feel free to reach out for collaborations, projects, or just to connect!</p>
+
+    <div class="contact-info">
+      <div class="info-box">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>1-230312@asiatech.edu.ph</p>
+      </div>
+
+      <div class="info-box">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+63 992 907 0751</p>
+      </div>
+
+      <div class="info-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>City of Santa Rosa, Laguna, Philippines</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required>
+      <input type="email" name="user_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
 </body>
 </html>
